@@ -1,0 +1,8 @@
+name: lightEconomy
+author: lightPlugins
+version: 5.2.0
+main: de.equipment.master.Main
+api-version: 1.19
+depend: [Vault]
+softdepend: [PlaceholderAPI]
+commands: {}

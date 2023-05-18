@@ -1,0 +1,8 @@
+prefix: '&c&l&olight&7Equipment &8●⏺ &7'
+noPermission: '&cYou dont have permission to execute this command &7!'
+exception: '&4There was a critical Error. Show in the log for further informations&7!'
+wrongCommand: '&cThis command does not exist. Maybe try /le help &7!'
+sqlError: '&cThere was an error in the SQLGetter &7!'
+reload: '&7The config was successfully reloaded.'
+noConsole: 'This command can only be executed by a player'
+noPlayer: '&cThis command can only be executed by the console &7!'
