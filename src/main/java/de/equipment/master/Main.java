@@ -1,10 +1,12 @@
 package de.equipment.master;
 
+import de.equipment.maps.MapManager;
 import de.equipment.utils.ColorTranslation;
 import de.equipment.utils.FileManager;
 import de.equipment.utils.Util;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.Bukkit;
+import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -44,6 +46,9 @@ public class Main extends JavaPlugin {
 
         colorTranslation = new ColorTranslation();
         util = new Util();
+
+        PluginManager pluginManager = Bukkit.getPluginManager();
+        pluginManager.registerEvents(new MapManager(), this);
 
     }
 
