@@ -1,0 +1,20 @@
+consumable:
+  betterBread:
+    material: BREAD
+    glow: false
+    custom-model-data: 200  #0 = default model data
+    display-name: '#00aeffVerbessertes Brot'
+    hunger: 10  # 5 default
+    saturation: 6 # 6 default
+    lore:
+      - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lINFO &8&m--&r#00aeff●&8&m--------&r'
+      - ' '
+      - '&7Dieses #00aeffverbesserte Brot &7gibt dir'
+      - '#00aeffmehr Hungerbalken&r&7 auf einmal.'
+    crafting:
+      declare:
+        - 'a;BREAD'
+      receipt:
+        - 'aaa'
+        - 'aaa'
+        - 'aaa'

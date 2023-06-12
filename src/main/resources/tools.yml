@@ -1,0 +1,27 @@
+tools:
+  starter-axe:
+    material: IRON_PICKAXE
+    custom-model-data: 100
+    stage:
+      [0]:
+        display-name: '#00aeffAmber Spitzhacke &7- &8+0'
+        lore:
+          - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lINFO &8&m--&r#00aeff●&8&m--------&r'
+          - ' '
+          - '&7Diese Spitzhacke lässt #00aeffAmber &7dropen.'
+          - ' '
+          - '&7Dropchances:'
+          - ' '
+          - '&7- #00aeffKohle Erz &8→ #00aeff12.5 &7%'
+          - '&7- #00aeffDeepslate Kohle Erz &8→ #00aeff17.5 &7%'
+          - ' '
+          - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lASHURA &8&m--&r#00aeff●&8&m--------&r'
+        drops:
+          - 'COAL_ORE;amber;12.5'
+          - 'DEEPSLATE_COAL_ORE;amber;17.5'
+        upgrade:
+          - 'amber;50'
+          - 'vault;8000'
+
+
+

@@ -1,5 +1,6 @@
 package de.equipment.maps;
 
+import de.equipment.consumables.ConsumableManager;
 import de.equipment.master.Main;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -10,13 +11,12 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
-import org.bukkit.event.entity.ItemMergeEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitTask;
+import org.checkerframework.checker.units.qual.C;
 
-import javax.imageio.stream.IIOByteBuffer;
 
 public class MapManager implements Listener {
 
@@ -40,18 +40,12 @@ public class MapManager implements Listener {
                 player.getWorld().getBlockAt(blockLocation).setType(Material.BEDROCK);
                 event.setCancelled(true);
 
-                ItemStack  itemStack = new ItemStack(Material.COAL_ORE, 10);
-                ItemMeta itemMeta = itemStack.getItemMeta();
+                ConsumableManager consumableManager = new ConsumableManager();
 
-                assert itemMeta != null;
-                itemMeta.setDisplayName("§cDas ist ein Test");
-
-                itemStack.setItemMeta(itemMeta);
-
-
+                ItemStack  itemStack = consumableManager.getConsumableItem("betterBread");
 
                 Item item = world.dropItemNaturally(blockLocation, itemStack);
-                item.setCustomName("§cDas ist ein Test");
+                item.setCustomName(itemStack.getItemMeta().getDisplayName());
                 item.setCustomNameVisible(true);
 
                 BukkitTask task = new BukkitRunnable() {
