@@ -4,6 +4,7 @@ consumable:
     glow: false
     custom-model-data: 200  #0 = default model data
     display-name: '#00aeffVerbessertes Brot'
+    type: food
     hunger: 10  # 5 default
     saturation: 6 # 6 default
     lore:
