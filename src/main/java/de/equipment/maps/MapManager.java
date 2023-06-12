@@ -1,6 +1,7 @@
 package de.equipment.maps;
 
 import de.equipment.consumables.ConsumableManager;
+import de.equipment.items.PickaxeManager;
 import de.equipment.master.Main;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -41,12 +42,19 @@ public class MapManager implements Listener {
                 event.setCancelled(true);
 
                 ConsumableManager consumableManager = new ConsumableManager();
+                PickaxeManager pickaxeManager = new PickaxeManager();
 
-                ItemStack  itemStack = consumableManager.getConsumableItem("fruitOfLife");
+                ItemStack itemStack = consumableManager.getConsumableItem("fruitOfLife");
+                ItemStack pickaxe = pickaxeManager.getPickaxe(0, "pickaxe");
 
                 Item item = world.dropItemNaturally(blockLocation, itemStack);
+                Item item2 = world.dropItemNaturally(blockLocation, pickaxe);
+
                 item.setCustomName(itemStack.getItemMeta().getDisplayName());
                 item.setCustomNameVisible(true);
+
+                item2.setCustomName(pickaxe.getItemMeta().getDisplayName());
+                item2.setCustomNameVisible(true);
 
                 BukkitTask task = new BukkitRunnable() {
 

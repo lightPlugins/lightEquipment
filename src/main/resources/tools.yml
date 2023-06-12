@@ -1,25 +1,30 @@
 tools:
-  starter-axe:
-    material: IRON_PICKAXE
-    custom-model-data: 100
+  pickaxe:
+    material: DIAMOND_PICKAXE
+    type: PICKAXE_TOOL
+    world-blacklist: []
     stage:
-      [0]:
-        display-name: '#00aeffAmber Spitzhacke &7- &8+0'
+      '0':
+        custom-model-data: 300
+        display-name: '#00aeffAmber Spitzhacke &8+0'
         lore:
           - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lINFO &8&m--&r#00aeff●&8&m--------&r'
           - ' '
-          - '&7Diese Spitzhacke lässt #00aeffAmber &7dropen.'
+          - '&7Mit dieser Haupt-Spitzhacke farmst du'
+          - '&7verschiedenste Resourcen. Mit jeder'
+          - '&7höheren Stufe nimmt die Dropchance zu'
+          - '&7und ermöglicht dir alle 10 Stufen'
+          - '&7noch weitere Erze zu finden, dessen'
+          - '&7Dropchancen sich ebenfalls erhöhen.'
           - ' '
-          - '&7Dropchances:'
-          - ' '
-          - '&7- #00aeffKohle Erz &8→ #00aeff12.5 &7%'
-          - '&7- #00aeffDeepslate Kohle Erz &8→ #00aeff17.5 &7%'
+          - '&7Drops:'
+          - '&7- #00aeffAmber &7| #00aeffKohle Erze &8→ #00aeff5.0 &7%'
           - ' '
           - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lASHURA &8&m--&r#00aeff●&8&m--------&r'
         drops:
           - 'COAL_ORE;amber;12.5'
           - 'DEEPSLATE_COAL_ORE;amber;17.5'
-        upgrade:
+        next-stage:
           - 'amber;50'
           - 'vault;8000'
 

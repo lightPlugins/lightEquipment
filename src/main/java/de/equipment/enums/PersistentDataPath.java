@@ -2,8 +2,11 @@ package de.equipment.enums;
 
 public enum PersistentDataPath {
 
-    MONEY_VALUE("EXAMPLE_DATA"),
     CONSUMABLE_TYPE("CONSUMABLE_TYPE"),
+
+    TOOL_TYPE("TOOL_TYPE"),
+
+    PICKAXE_STAGE("PICKAXE_STAGE"),
     ;
 
     private String type;
