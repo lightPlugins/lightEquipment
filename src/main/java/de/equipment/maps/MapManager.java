@@ -42,7 +42,7 @@ public class MapManager implements Listener {
 
                 ConsumableManager consumableManager = new ConsumableManager();
 
-                ItemStack  itemStack = consumableManager.getConsumableItem("betterBread");
+                ItemStack  itemStack = consumableManager.getConsumableItem("fruitOfLife");
 
                 Item item = world.dropItemNaturally(blockLocation, itemStack);
                 item.setCustomName(itemStack.getItemMeta().getDisplayName());

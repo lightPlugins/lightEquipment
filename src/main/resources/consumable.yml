@@ -19,3 +19,23 @@ consumable:
         - 'aaa'
         - 'aaa'
         - 'aaa'
+  fruitOfLife:
+    material: SWEET_BERRIES
+    glow: false
+    custom-model-data: 201  #0 = default model data
+    display-name: '#e7c529Frucht des Lebens'
+    type: food
+    hunger: 10  # 5 default
+    saturation: 6 # 6 default
+    lore:
+      - '&8&m--------&r#e7c529●&8&m--&r #e7c529&lINFO &8&m--&r#e7c529●&8&m--------&r'
+      - ' '
+      - '&7Dieses #e7c529verbesserte Brot &7gibt dir'
+      - '#e7c529mehr Hungerbalken&r&7 auf einmal.'
+    crafting:
+      declare:
+        - 'a;BREAD'
+      receipt:
+        - 'aaa'
+        - 'aaa'
+        - 'aaa'
