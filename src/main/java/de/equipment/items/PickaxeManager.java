@@ -25,7 +25,6 @@ public class PickaxeManager {
         Material material = Material.valueOf(tools.getString("tools." + itemName + ".material"));
         int modelData = tools.getInt("tools." + itemName + "." + stage + ".custom-model-data");
         Bukkit.getLogger().log(Level.WARNING, "TEST: " + tools.getString("tools." + itemName + ".stage"));
-        String toolType = tools.getString("tools." + itemName + ".type");
 
         ItemStack is = new ItemStack(material);
         ItemMeta im = is.getItemMeta();
@@ -40,7 +39,7 @@ public class PickaxeManager {
         tools.getStringList("tools." + itemName + ".stage." + stage + ".lore").forEach(
                 line -> loreList.add(Main.colorTranslation.hexTranslation(line)));
 
-        if(toolType != null) {
+        if(itemName != null) {
             PersistentDataContainer data = im.getPersistentDataContainer();
             NamespacedKey toolTypeKey = new NamespacedKey(
                     Main.getInstance, PersistentDataPath.TOOL_TYPE.getType());
@@ -49,7 +48,7 @@ public class PickaxeManager {
 
             //  NBT Tags for tool kind
             if(toolTypeKey.getKey().equalsIgnoreCase(PersistentDataPath.TOOL_TYPE.getType())) {
-                data.set(toolTypeKey, PersistentDataType.STRING, toolType);
+                data.set(toolTypeKey, PersistentDataType.STRING, itemName);
             }
             //  NBT Tags for tool stage 1-30
             if(pickaxeStage.getKey().equalsIgnoreCase(PersistentDataPath.PICKAXE_STAGE.getType())) {

@@ -1,7 +1,6 @@
 tools:
   pickaxe:
     material: DIAMOND_PICKAXE
-    type: PICKAXE_TOOL
     world-blacklist: []
     stage:
       '0':
@@ -22,10 +21,10 @@ tools:
           - ' '
           - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lASHURA &8&m--&r#00aeff●&8&m--------&r'
         drops:
-          - 'COAL_ORE;amber;12.5'
-          - 'DEEPSLATE_COAL_ORE;amber;17.5'
+          - 'COAL_ORE;zircon;100'
+          - 'DEEPSLATE_COAL_ORE;zircon;100'
         next-stage:
-          - 'amber;50'
+          - 'zircon;50'
           - 'vault;8000'
 
 

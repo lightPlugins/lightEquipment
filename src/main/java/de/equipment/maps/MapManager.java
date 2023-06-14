@@ -13,10 +13,6 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
-import org.bukkit.scheduler.BukkitRunnable;
-import org.bukkit.scheduler.BukkitTask;
-import org.checkerframework.checker.units.qual.C;
 
 
 public class MapManager implements Listener {
@@ -38,7 +34,7 @@ public class MapManager implements Listener {
                     Drop Item from Item list, if the specified Block breaks
                  */
 
-                player.getWorld().getBlockAt(blockLocation).setType(Material.BEDROCK);
+                // player.getWorld().getBlockAt(blockLocation).setType(Material.BEDROCK);
                 event.setCancelled(true);
 
                 ConsumableManager consumableManager = new ConsumableManager();
@@ -46,7 +42,7 @@ public class MapManager implements Listener {
 
                 ItemStack itemStack = consumableManager.getConsumableItem("fruitOfLife");
                 ItemStack pickaxe = pickaxeManager.getPickaxe(0, "pickaxe");
-
+                /*
                 Item item = world.dropItemNaturally(blockLocation, itemStack);
                 Item item2 = world.dropItemNaturally(blockLocation, pickaxe);
 
@@ -56,6 +52,7 @@ public class MapManager implements Listener {
                 item2.setCustomName(pickaxe.getItemMeta().getDisplayName());
                 item2.setCustomNameVisible(true);
 
+                /*
                 BukkitTask task = new BukkitRunnable() {
 
                     final int[] counter = {0};
@@ -68,7 +65,7 @@ public class MapManager implements Listener {
                         }
                         counter[0] ++;
                     }
-                }.runTaskTimer(Main.getInstance, 0, 20);
+                }.runTaskTimer(Main.getInstance, 0, 20); */
             }
         }
 

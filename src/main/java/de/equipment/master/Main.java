@@ -1,6 +1,7 @@
 package de.equipment.master;
 
 import de.equipment.listener.ConsumableListener;
+import de.equipment.listener.DropsPickaxeListener;
 import de.equipment.maps.MapManager;
 import de.equipment.receipts.ConsumableReceips;
 import de.equipment.utils.ColorTranslation;
@@ -64,6 +65,7 @@ public class Main extends JavaPlugin {
         PluginManager pluginManager = Bukkit.getPluginManager();
         pluginManager.registerEvents(new MapManager(), this);
         pluginManager.registerEvents(new ConsumableListener(), this);
+        pluginManager.registerEvents(new DropsPickaxeListener(), this);
 
 
     }

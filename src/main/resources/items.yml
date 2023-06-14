@@ -1,8 +1,14 @@
 items:
-  gems:
-    amber:
-      material: PAPER
-      display-name: ''
-      custom-model-data: 100
-      lore:
-        - ''
+  zircon:
+    material: PAPER
+    display-name: '#00aeffBlauer Zircon Gem'
+    custom-model-data: 100
+    data: 'zircon'
+    glow: false
+    lore:
+      - '&8&m-----&r#00aeff●&8&m--&r #00aeff&lINFO &8&m--&r#00aeff●&8&m-----&r'
+      - ' '
+      - '&7Dieses Item wird dazu verwendet,'
+      - '&7dein #00aeffEquipment &7zu verbessern.'
+      - ' '
+      - '&8&m---&r#00aeff●&8&m--&r #00aeff&lASHURA &8&m--&r#00aeff●&8&m---&r'

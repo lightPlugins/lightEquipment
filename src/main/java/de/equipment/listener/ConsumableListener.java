@@ -1,6 +1,5 @@
 package de.equipment.listener;
 
-import com.google.common.io.LittleEndianDataInputStream;
 import de.equipment.consumables.ConsumableManager;
 import de.equipment.enums.PersistentDataPath;
 import de.equipment.master.Main;
@@ -9,13 +8,13 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.entity.FoodLevelChangeEvent;
 import org.bukkit.event.player.PlayerItemConsumeEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
-import org.checkerframework.checker.units.qual.C;
+
+import java.util.Objects;
 
 public class ConsumableListener implements Listener {
 
@@ -27,9 +26,11 @@ public class ConsumableListener implements Listener {
 
         FileConfiguration consumable = Main.consumable.getConfig();
 
-        for(String path : consumable.getConfigurationSection("consumable").getKeys(false)) {
+        for(String path : Objects.requireNonNull(
+                consumable.getConfigurationSection("consumable")).getKeys(false)) {
 
-            if(!consumable.getString("consumable." + path + ".type").equalsIgnoreCase("food")) {
+            if(!Objects.requireNonNull(
+                    consumable.getString("consumable." + path + ".type")).equalsIgnoreCase("food")) {
                 return;
             }
 
@@ -37,7 +38,8 @@ public class ConsumableListener implements Listener {
             ItemStack is = consumableManager.getConsumableItem(path);
             ItemMeta im = is.getItemMeta();
 
-            PersistentDataContainer data = event.getItem().getItemMeta().getPersistentDataContainer();
+            PersistentDataContainer data =
+                    Objects.requireNonNull(event.getItem().getItemMeta()).getPersistentDataContainer();
             NamespacedKey key = new NamespacedKey(Main.getInstance, PersistentDataPath.CONSUMABLE_TYPE.getType());
 
             if(key.getKey().equalsIgnoreCase(PersistentDataPath.CONSUMABLE_TYPE.getType())) {
@@ -47,6 +49,7 @@ public class ConsumableListener implements Listener {
 
                 String consumableType = data.get(key, PersistentDataType.STRING);
 
+                assert consumableType != null;
                 if(consumableType.equalsIgnoreCase("food")) {
 
                     int currentHungerLevel = player.getFoodLevel();
@@ -65,11 +68,5 @@ public class ConsumableListener implements Listener {
                 }
             }
         }
-
-
-
-
-
-
     }
 }
