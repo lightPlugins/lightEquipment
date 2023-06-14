@@ -12,6 +12,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.util.List;
+import java.util.Random;
 
 public class Util {
 
@@ -95,4 +96,9 @@ public class Util {
     }
 
     public boolean isInventoryEmpty(Player player) { return player.getInventory().firstEmpty() != -1; }
+
+    public double getRandomDoubleFromRange(double min, double max) {
+        Random random = new Random();
+        return min + (max - min) * random.nextDouble();
+    }
 }

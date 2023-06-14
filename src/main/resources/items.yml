@@ -1,0 +1,8 @@
+items:
+  gems:
+    amber:
+      material: PAPER
+      display-name: ''
+      custom-model-data: 100
+      lore:
+        - ''
