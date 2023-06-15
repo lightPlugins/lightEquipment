@@ -42,15 +42,15 @@ public class MapManager implements Listener {
 
                 ItemStack itemStack = consumableManager.getConsumableItem("fruitOfLife");
                 ItemStack pickaxe = pickaxeManager.getPickaxe(0, "pickaxe");
-                /*
-                Item item = world.dropItemNaturally(blockLocation, itemStack);
-                Item item2 = world.dropItemNaturally(blockLocation, pickaxe);
 
-                item.setCustomName(itemStack.getItemMeta().getDisplayName());
-                item.setCustomNameVisible(true);
+                //Item item = world.dropItemNaturally(blockLocation, itemStack);
+                //Item item2 = world.dropItemNaturally(blockLocation, pickaxe);
 
-                item2.setCustomName(pickaxe.getItemMeta().getDisplayName());
-                item2.setCustomNameVisible(true);
+                //item.setCustomName(itemStack.getItemMeta().getDisplayName());
+                //item.setCustomNameVisible(true);
+
+                //item2.setCustomName(pickaxe.getItemMeta().getDisplayName());
+                //item2.setCustomNameVisible(true);
 
                 /*
                 BukkitTask task = new BukkitRunnable() {

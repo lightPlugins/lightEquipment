@@ -30,7 +30,7 @@ public class ConsumableManager {
                 consumable.getString("consumable." + itemName + ".display-name"));
         boolean glow = consumable.getBoolean("consumable." + itemName + ".glow");
         int customModeData = consumable.getInt("consumable." + itemName + ".custom-model-data");
-        String consumableType = consumable.getString("consumable." + itemName + ".type");
+        String consumableType = itemName.toLowerCase();
 
         assert im != null;
         is.setType(material);

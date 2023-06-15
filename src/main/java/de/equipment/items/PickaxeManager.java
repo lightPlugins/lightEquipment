@@ -13,7 +13,6 @@ import org.bukkit.persistence.PersistentDataType;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
 
 public class PickaxeManager {
 
@@ -23,8 +22,7 @@ public class PickaxeManager {
         FileConfiguration tools = Main.tools.getConfig();
 
         Material material = Material.valueOf(tools.getString("tools." + itemName + ".material"));
-        int modelData = tools.getInt("tools." + itemName + "." + stage + ".custom-model-data");
-        Bukkit.getLogger().log(Level.WARNING, "TEST: " + tools.getString("tools." + itemName + ".stage"));
+        int modelData = tools.getInt("tools." + itemName + ".stage." + stage + ".custom-model-data");
 
         ItemStack is = new ItemStack(material);
         ItemMeta im = is.getItemMeta();

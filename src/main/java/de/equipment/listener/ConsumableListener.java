@@ -3,6 +3,7 @@ package de.equipment.listener;
 import de.equipment.consumables.ConsumableManager;
 import de.equipment.enums.PersistentDataPath;
 import de.equipment.master.Main;
+import org.bukkit.Bukkit;
 import org.bukkit.NamespacedKey;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
@@ -15,6 +16,7 @@ import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
 
 import java.util.Objects;
+import java.util.logging.Level;
 
 public class ConsumableListener implements Listener {
 
@@ -29,10 +31,7 @@ public class ConsumableListener implements Listener {
         for(String path : Objects.requireNonNull(
                 consumable.getConfigurationSection("consumable")).getKeys(false)) {
 
-            if(!Objects.requireNonNull(
-                    consumable.getString("consumable." + path + ".type")).equalsIgnoreCase("food")) {
-                return;
-            }
+
 
             ConsumableManager consumableManager = new ConsumableManager();
             ItemStack is = consumableManager.getConsumableItem(path);
@@ -42,15 +41,20 @@ public class ConsumableListener implements Listener {
                     Objects.requireNonNull(event.getItem().getItemMeta()).getPersistentDataContainer();
             NamespacedKey key = new NamespacedKey(Main.getInstance, PersistentDataPath.CONSUMABLE_TYPE.getType());
 
-            if(key.getKey().equalsIgnoreCase(PersistentDataPath.CONSUMABLE_TYPE.getType())) {
-                if(!data.has(key, PersistentDataType.STRING)) {
-                    return;
-                }
+            String currentType = data.get(key, PersistentDataType.STRING);
 
-                String consumableType = data.get(key, PersistentDataType.STRING);
+            Bukkit.getLogger().log(Level.WARNING, "TEST " + currentType + " " + path);
+            if(currentType == null) { return; }
 
-                assert consumableType != null;
-                if(consumableType.equalsIgnoreCase("food")) {
+            if(currentType.equalsIgnoreCase(path)) {
+                if(key.getKey().equalsIgnoreCase(PersistentDataPath.CONSUMABLE_TYPE.getType())) {
+                    if(!data.has(key, PersistentDataType.STRING)) {
+                        return;
+                    }
+
+                    String consumableType = data.get(key, PersistentDataType.STRING);
+
+                    assert consumableType != null;
 
                     int currentHungerLevel = player.getFoodLevel();
                     int configHungerLevel = consumable.getInt("consumable." + path + ".hunger");

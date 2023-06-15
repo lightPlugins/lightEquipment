@@ -1,14 +1,14 @@
 items:
-  zircon:
+  ore_angeltine:
     material: PAPER
-    display-name: '#00aeffBlauer Zircon Gem'
+    display-name: '#00aeff&lRoher Angeltine'
     custom-model-data: 100
-    data: 'zircon'
+    data: 'ore_angeltine'
     glow: false
     lore:
-      - '&8&m-----&r#00aeff●&8&m--&r #00aeff&lINFO &8&m--&r#00aeff●&8&m-----&r'
+      - '&8&m----&r#00aeff●&8&m--&r #00aeff&lINFO &8&m--&r#00aeff●&8&m----&r'
       - ' '
-      - '&7Dieses Item wird dazu verwendet,'
+      - '&7Dieses Item wird verwendet, um'
       - '&7dein #00aeffEquipment &7zu verbessern.'
       - ' '
       - '&8&m---&r#00aeff●&8&m--&r #00aeff&lASHURA &8&m--&r#00aeff●&8&m---&r'
