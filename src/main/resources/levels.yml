@@ -1,0 +1,20 @@
+levels:
+  '2':
+    needed-xp: 500
+  '3':
+    needed-xp: 1500
+  '4':
+    needed-xp: 4500
+  '5':
+    needed-xp: 13500
+  '6':
+    needed-xp: 1500
+  '7':
+    needed-xp: 1500
+  '8':
+    needed-xp: 1500
+  '9':
+    needed-xp: 1500
+  '10':
+    needed-xp: 1500
+
