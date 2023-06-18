@@ -6,7 +6,7 @@ public enum PermissionPath {
         Admin Command Perissions
      */
 
-    MoneyAdd("lighteconomy.admin.command.moneyadd"),
+    AdminPickAxe("ashura.commands.admin.pickaxe"),
 
     /*
         User Command Perissions

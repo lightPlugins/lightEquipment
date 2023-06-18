@@ -6,6 +6,8 @@ import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.entity.Item;
+import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataContainer;
@@ -13,6 +15,7 @@ import org.bukkit.persistence.PersistentDataType;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class PickaxeManager {
 
@@ -20,6 +23,13 @@ public class PickaxeManager {
     public ItemStack getPickaxe(int stage, String itemName) {
 
         FileConfiguration tools = Main.tools.getConfig();
+
+        List<String> toolsList =
+                new ArrayList<>(Objects.requireNonNull(tools.getConfigurationSection("tools")).getKeys(false));
+
+        if(!toolsList.contains(itemName)) {
+            return new ItemStack(Material.DIRT, 1);
+        }
 
         Material material = Material.valueOf(tools.getString("tools." + itemName + ".material"));
         int modelData = tools.getInt("tools." + itemName + ".stage." + stage + ".custom-model-data");
@@ -36,6 +46,8 @@ public class PickaxeManager {
 
         tools.getStringList("tools." + itemName + ".stage." + stage + ".lore").forEach(
                 line -> loreList.add(Main.colorTranslation.hexTranslation(line)));
+
+        im.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
 
         if(itemName != null) {
             PersistentDataContainer data = im.getPersistentDataContainer();

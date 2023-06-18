@@ -48,6 +48,9 @@ public class DropsPickaxeListener implements Listener {
             }
         }
 
+        if (!currentTool.hasItemMeta()) {
+            return;
+        }
 
         PersistentDataContainer data =
                 Objects.requireNonNull(currentTool.getItemMeta()).getPersistentDataContainer();

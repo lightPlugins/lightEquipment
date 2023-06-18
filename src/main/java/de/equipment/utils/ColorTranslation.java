@@ -1,5 +1,6 @@
 package de.equipment.utils;
 
+
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Bukkit;
 
@@ -14,7 +15,8 @@ public class ColorTranslation {
         if(Bukkit.getVersion().contains("1.16") ||
                 Bukkit.getVersion().contains("1.17") ||
                 Bukkit.getVersion().contains("1.18") ||
-                Bukkit.getVersion().contains("1.19")
+                Bukkit.getVersion().contains("1.19") ||
+                Bukkit.getVersion().contains("1.20")
 
         ){
             Matcher match = pattern.matcher(msg);

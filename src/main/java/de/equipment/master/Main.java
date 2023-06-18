@@ -1,5 +1,6 @@
 package de.equipment.master;
 
+import de.equipment.commands.main.MainCommandManager;
 import de.equipment.listener.ConsumableListener;
 import de.equipment.listener.DropsPickaxeListener;
 import de.equipment.maps.MapManager;
@@ -13,6 +14,8 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.checkerframework.checker.units.qual.C;
+
+import java.util.Objects;
 
 public class Main extends JavaPlugin {
 
@@ -54,6 +57,12 @@ public class Main extends JavaPlugin {
 
         colorTranslation = new ColorTranslation();
         util = new Util();
+
+        /*
+            Register commands
+         */
+
+        Objects.requireNonNull(this.getCommand("ashura")).setExecutor(new MainCommandManager(this));
 
         /*
             Register new crafting receipts

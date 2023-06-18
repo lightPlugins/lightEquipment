@@ -5,4 +5,6 @@ main: de.equipment.master.Main
 api-version: 1.19
 depend: [Vault]
 softdepend: [PlaceholderAPI]
-commands: {}
+commands: {
+            ashura:
+}
