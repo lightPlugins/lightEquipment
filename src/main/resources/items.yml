@@ -1,7 +1,7 @@
 items:
   ore_angeltine:
     material: PAPER
-    display-name: '#00aeff&lRoher Angeltine'
+    display-name: '#00aeffRoher Angeltine'
     custom-model-data: 100
     data: 'ore_angeltine'
     glow: false
@@ -11,4 +11,17 @@ items:
       - '&7Dieses Item wird verwendet, um'
       - '&7dein #00aeffEquipment &7zu verbessern.'
       - ' '
-      - '&8&m---&r#00aeff●&8&m--&r #00aeff&lASHURA &8&m--&r#00aeff●&8&m---&r'
+      - '&8&m---&r#00aeff●&8&m--&r #00aeff&lASHURAMC &8&m--&r#00aeff●&8&m---&r'
+  ore_taupetine:
+    material: PAPER
+    display-name: '#29e770Roher Taupetine'
+    custom-model-data: 101
+    data: 'ore_taupetine'
+    glow: false
+    lore:
+      - '&8&m----&r#29e770●&8&m--&r #29e770&lINFO &8&m--&r#29e770●&8&m----&r'
+      - ' '
+      - '&7Dieses Item wird verwendet, um'
+      - '&7dein #29e770Equipment &7zu verbessern.'
+      - ' '
+      - '&8&m---&r#29e770●&8&m--&r #29e770&lASHURAMC &8&m--&r#29e770●&8&m---&r'

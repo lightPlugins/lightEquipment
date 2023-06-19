@@ -6,6 +6,7 @@ import de.equipment.items.PickaxeManager;
 import de.equipment.master.Main;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
+import org.bukkit.Sound;
 import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -105,6 +106,8 @@ public class DropsPickaxeListener implements Listener {
                             ItemMeta dropperMeta = dropper.getItemMeta();
 
                             Item item = world.dropItemNaturally(block.getLocation(), dropper);
+
+                            player.getWorld().playSound(player.getLocation(), Sound.BLOCK_AMETHYST_CLUSTER_FALL, (float) 1.0, (float) 1.4);
 
                             assert dropperMeta != null;
 

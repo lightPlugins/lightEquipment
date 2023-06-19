@@ -6,7 +6,7 @@ tools:
     stage:
       '0':
         custom-model-data: 300
-        display-name: '#00aeffAmber Spitzhacke &8+0'
+        display-name: '#00aeffAngeltine Spitzhacke &8+0'
         lore:
           - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lINFO &8&m--&r#00aeff●&8&m--------&r'
           - ' '
@@ -18,15 +18,248 @@ tools:
           - '&7Dropchancen sich ebenfalls erhöhen.'
           - ' '
           - '&7Drops:'
-          - '&7- #00aeffAmber &7| #00aeffKohle Erze &8→ #00aeff5.0 &7%'
+          - '&7- #00aeffAngeltine &7| #00aeffKohle Erze &8→ #00aeff5.0 &7%'
           - ' '
-          - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lASHURA &8&m--&r#00aeff●&8&m--------&r'
+          - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lASHURAMC &8&m--&r#00aeff●&8&m--------&r'
         drops:
           - 'COAL_ORE;ore_angeltine;5.0'
           - 'DEEPSLATE_COAL_ORE;ore_angeltine;5.0'
         next-stage:
-          - 'zircon;50'
+          - 'ore_angeltine;10'
           - 'vault;8000'
-
+      '1':
+        custom-model-data: 300
+        display-name: '#00aeffAngeltine Spitzhacke &8+1'
+        lore:
+          - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lINFO &8&m--&r#00aeff●&8&m--------&r'
+          - ' '
+          - '&7Mit dieser #00aeffHaupt-Spitzhacke &7farmst du'
+          - '&7verschiedenste Resourcen. Mit jeder'
+          - '&7höheren Stufe nimmt die #00aeffDropchance &7zu'
+          - '&7und ermöglicht dir alle #00aeff10 &7Stufen'
+          - '&7noch weitere #00aeffneue Erze &7zu finden, dessen'
+          - '&7Dropchancen sich ebenfalls erhöhen.'
+          - ' '
+          - '&7Drops:'
+          - '&7- #00aeffAngeltine &7| #00aeffKohle Erze &8→ #00aeff10.0 &7%'
+          - ' '
+          - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lASHURAMC &8&m--&r#00aeff●&8&m--------&r'
+        drops:
+          - 'COAL_ORE;ore_angeltine;10.0'
+          - 'DEEPSLATE_COAL_ORE;ore_angeltine;10.0'
+        next-stage:
+          - 'ore_angeltine;30'
+          - 'vault;8000'
+      '2':
+        custom-model-data: 300
+        display-name: '#00aeffAngeltine Spitzhacke &8+2'
+        lore:
+          - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lINFO &8&m--&r#00aeff●&8&m--------&r'
+          - ' '
+          - '&7Mit dieser #00aeffHaupt-Spitzhacke &7farmst du'
+          - '&7verschiedenste Resourcen. Mit jeder'
+          - '&7höheren Stufe nimmt die #00aeffDropchance &7zu'
+          - '&7und ermöglicht dir alle #00aeff10 &7Stufen'
+          - '&7noch weitere #00aeffneue Erze &7zu finden, dessen'
+          - '&7Dropchancen sich ebenfalls erhöhen.'
+          - ' '
+          - '&7Drops:'
+          - '&7- #00aeffAngeltine &7| #00aeffKohle Erze &8→ #00aeff15.0 &7%'
+          - ' '
+          - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lASHURAMC &8&m--&r#00aeff●&8&m--------&r'
+        drops:
+          - 'COAL_ORE;ore_angeltine;15.0'
+          - 'DEEPSLATE_COAL_ORE;ore_angeltine;15.0'
+        next-stage:
+          - 'ore_angeltine;100'
+          - 'vault;8000'
+      '3':
+        custom-model-data: 300
+        display-name: '#00aeffAngeltine Spitzhacke &8+3'
+        lore:
+          - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lINFO &8&m--&r#00aeff●&8&m--------&r'
+          - ' '
+          - '&7Mit dieser #00aeffHaupt-Spitzhacke &7farmst du'
+          - '&7verschiedenste Resourcen. Mit jeder'
+          - '&7höheren Stufe nimmt die #00aeffDropchance &7zu'
+          - '&7und ermöglicht dir alle #00aeff10 &7Stufen'
+          - '&7noch weitere #00aeffneue Erze &7zu finden, dessen'
+          - '&7Dropchancen sich ebenfalls erhöhen.'
+          - ' '
+          - '&7Drops:'
+          - '&7- #00aeffAngeltine &7| #00aeffKohle Erze &8→ #00aeff20.0 &7%'
+          - ' '
+          - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lASHURAMC &8&m--&r#00aeff●&8&m--------&r'
+        drops:
+          - 'COAL_ORE;ore_angeltine;20.0'
+          - 'DEEPSLATE_COAL_ORE;ore_angeltine;20.0'
+        next-stage:
+          - 'ore_angeltine;250'
+          - 'vault;8000'
+      '4':
+        custom-model-data: 300
+        display-name: '#00aeffAngeltine Spitzhacke &8+4'
+        lore:
+          - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lINFO &8&m--&r#00aeff●&8&m--------&r'
+          - ' '
+          - '&7Mit dieser #00aeffHaupt-Spitzhacke &7farmst du'
+          - '&7verschiedenste Resourcen. Mit jeder'
+          - '&7höheren Stufe nimmt die #00aeffDropchance &7zu'
+          - '&7und ermöglicht dir alle #00aeff10 &7Stufen'
+          - '&7noch weitere #00aeffneue Erze &7zu finden, dessen'
+          - '&7Dropchancen sich ebenfalls erhöhen.'
+          - ' '
+          - '&7Drops:'
+          - '&7- #00aeffAngeltine &7| #00aeffKohle Erze &8→ #00aeff25.0 &7%'
+          - ' '
+          - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lASHURAMC &8&m--&r#00aeff●&8&m--------&r'
+        drops:
+          - 'COAL_ORE;ore_angeltine;25.0'
+          - 'DEEPSLATE_COAL_ORE;ore_angeltine;25.0'
+        next-stage:
+          - 'ore_angeltine;250'
+          - 'vault;8000'
+      '5':
+        custom-model-data: 300
+        display-name: '#00aeffAngeltine Spitzhacke &8+5'
+        lore:
+          - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lINFO &8&m--&r#00aeff●&8&m--------&r'
+          - ' '
+          - '&7Mit dieser #00aeffHaupt-Spitzhacke &7farmst du'
+          - '&7verschiedenste Resourcen. Mit jeder'
+          - '&7höheren Stufe nimmt die #00aeffDropchance &7zu'
+          - '&7und ermöglicht dir alle #00aeff10 &7Stufen'
+          - '&7noch weitere #00aeffneue Erze &7zu finden, dessen'
+          - '&7Dropchancen sich ebenfalls erhöhen.'
+          - ' '
+          - '&7Drops:'
+          - '&7- #00aeffAngeltine &7| #00aeffKohle Erze &8→ #00aeff30.0 &7%'
+          - ' '
+          - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lASHURAMC &8&m--&r#00aeff●&8&m--------&r'
+        drops:
+          - 'COAL_ORE;ore_angeltine;30.0'
+          - 'DEEPSLATE_COAL_ORE;ore_angeltine;30.0'
+        next-stage:
+          - 'ore_angeltine;250'
+          - 'vault;8000'
+      '6':
+        custom-model-data: 300
+        display-name: '#00aeffAngeltine Spitzhacke &8+6'
+        lore:
+          - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lINFO &8&m--&r#00aeff●&8&m--------&r'
+          - ' '
+          - '&7Mit dieser #00aeffHaupt-Spitzhacke &7farmst du'
+          - '&7verschiedenste Resourcen. Mit jeder'
+          - '&7höheren Stufe nimmt die #00aeffDropchance &7zu'
+          - '&7und ermöglicht dir alle #00aeff10 &7Stufen'
+          - '&7noch weitere #00aeffneue Erze &7zu finden, dessen'
+          - '&7Dropchancen sich ebenfalls erhöhen.'
+          - ' '
+          - '&7Drops:'
+          - '&7- #00aeffAngeltine &7| #00aeffKohle Erze &8→ #00aeff35.0 &7%'
+          - ' '
+          - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lASHURAMC &8&m--&r#00aeff●&8&m--------&r'
+        drops:
+          - 'COAL_ORE;ore_angeltine;35.0'
+          - 'DEEPSLATE_COAL_ORE;ore_angeltine;35.0'
+        next-stage:
+          - 'ore_angeltine;250'
+          - 'vault;8000'
+      '7':
+        custom-model-data: 300
+        display-name: '#00aeffAngeltine Spitzhacke &8+7'
+        lore:
+          - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lINFO &8&m--&r#00aeff●&8&m--------&r'
+          - ' '
+          - '&7Mit dieser #00aeffHaupt-Spitzhacke &7farmst du'
+          - '&7verschiedenste Resourcen. Mit jeder'
+          - '&7höheren Stufe nimmt die #00aeffDropchance &7zu'
+          - '&7und ermöglicht dir alle #00aeff10 &7Stufen'
+          - '&7noch weitere #00aeffneue Erze &7zu finden, dessen'
+          - '&7Dropchancen sich ebenfalls erhöhen.'
+          - ' '
+          - '&7Drops:'
+          - '&7- #00aeffAngeltine &7| #00aeffKohle Erze &8→ #00aeff40.0 &7%'
+          - ' '
+          - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lASHURAMC &8&m--&r#00aeff●&8&m--------&r'
+        drops:
+          - 'COAL_ORE;ore_angeltine;40.0'
+          - 'DEEPSLATE_COAL_ORE;ore_angeltine;40.0'
+        next-stage:
+          - 'ore_angeltine;250'
+          - 'vault;8000'
+      '8':
+        custom-model-data: 300
+        display-name: '#00aeffAngeltine Spitzhacke &8+8'
+        lore:
+          - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lINFO &8&m--&r#00aeff●&8&m--------&r'
+          - ' '
+          - '&7Mit dieser #00aeffHaupt-Spitzhacke &7farmst du'
+          - '&7verschiedenste Resourcen. Mit jeder'
+          - '&7höheren Stufe nimmt die #00aeffDropchance &7zu'
+          - '&7und ermöglicht dir alle #00aeff10 &7Stufen'
+          - '&7noch weitere #00aeffneue Erze &7zu finden, dessen'
+          - '&7Dropchancen sich ebenfalls erhöhen.'
+          - ' '
+          - '&7Drops:'
+          - '&7- #00aeffAngeltine &7| #00aeffKohle Erze &8→ #00aeff45.0 &7%'
+          - ' '
+          - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lASHURAMC &8&m--&r#00aeff●&8&m--------&r'
+        drops:
+          - 'COAL_ORE;ore_angeltine;45.0'
+          - 'DEEPSLATE_COAL_ORE;ore_angeltine;45.0'
+        next-stage:
+          - 'ore_angeltine;250'
+          - 'vault;8000'
+      '9':
+        custom-model-data: 300
+        display-name: '#00aeffAngeltine Spitzhacke &8+9'
+        lore:
+          - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lINFO &8&m--&r#00aeff●&8&m--------&r'
+          - ' '
+          - '&7Mit dieser #00aeffHaupt-Spitzhacke &7farmst du'
+          - '&7verschiedenste Resourcen. Mit jeder'
+          - '&7höheren Stufe nimmt die #00aeffDropchance &7zu'
+          - '&7und ermöglicht dir alle #00aeff10 &7Stufen'
+          - '&7noch weitere #00aeffneue Erze &7zu finden, dessen'
+          - '&7Dropchancen sich ebenfalls erhöhen.'
+          - ' '
+          - '&7Drops:'
+          - '&7- #00aeffAngeltine &7| #00aeffKohle Erze &8→ #00aeff50.0 &7%'
+          - ' '
+          - '&8&m--------&r#00aeff●&8&m--&r #00aeff&lASHURAMC &8&m--&r#00aeff●&8&m--------&r'
+        drops:
+          - 'COAL_ORE;ore_angeltine;50.0'
+          - 'DEEPSLATE_COAL_ORE;ore_angeltine;50.0'
+        next-stage:
+          - 'ore_angeltine;250'
+          - 'vault;8000'
+      '10':
+        custom-model-data: 301
+        display-name: '#29e770Taupeline Spitzhacke &8+9'
+        lore:
+          - '&8&m--------&r#29e770●&8&m--&r #29e770&lINFO &8&m--&r#29e770●&8&m--------&r'
+          - ' '
+          - '&7Mit dieser #29e770Haupt-Spitzhacke &7farmst du'
+          - '&7verschiedenste Resourcen. Mit jeder'
+          - '&7höheren Stufe nimmt die #29e770Dropchance &7zu'
+          - '&7und ermöglicht dir alle #29e77010 &7Stufen'
+          - '&7noch weitere #29e770neue Erze &7zu finden, dessen'
+          - '&7Dropchancen sich ebenfalls erhöhen.'
+          - ' '
+          - '&7Drops:'
+          - '&7- #00aeffAngeltine &7| #00aeffKohle Erze &8→ #00aeff50.0 &7%'
+          - '&7- #29e770Taupetine &7| #29e770Eisen Erze &8→ #29e7705.0 &7%'
+          - ' '
+          - '&8&m--------&r#29e770●&8&m--&r #29e770&lASHURAMC &8&m--&r#29e770●&8&m--------&r'
+        drops:
+          - 'COAL_ORE;ore_angeltine;50.0'
+          - 'DEEPSLATE_COAL_ORE;ore_angeltine;50.0'
+          - 'IRON_ORE;ore_taupetine;5.0'
+          - 'DEEPSLATE_IRON_ORE;ore_taupetine;5.0'
+        next-stage:
+          - 'ore_angeltine;20'
+          - 'ore_taupetine;250'
+          - 'vault;8000'
 
 
